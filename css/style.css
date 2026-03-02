@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+}
+
+.logo{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #634221;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  
+}
+
+
+img{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 1rem;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.titulosSeccion{
+    font-size: 2.3em;
+    color: #38495B;
+}
+
+/* nav contenedor de mi menu y logo */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 .5rem;
+    flex-wrap: wrap;
+}
+
+
+.link-listitems{
+    color: white;
+    background-color: chocolate;
+    padding: .5rem;
+     border-radius: .5rem;
+}
+
+.li-nav{
+    margin: .5rem 0;
+}
+
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+   
+}
+
+/* seccion sobre nosotros */
+.container-acercaDeNosotros{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem .5rem;
+}
+
+.article-acercaDeNosotros{
+    width: 45%;
+}
+
+.img-acercaDeNosotros{
+    width: 45%;
+}
+
+.parrafo-acercaDeNosotros{
+    color: #38495B;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:800px){
+    .container-acercaDeNosotros{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-acercaDeNosotros{
+        width: 80%;
+}
+    .img-acercaDeNosotros{
+        width: 80%;
+}
+}
