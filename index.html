@@ -3,59 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="cerca de mi ubicacion">
-    <meta name="author" content="Danseisoft-solutions">
-    <meta name="keywords" content="panaderia, masas dulces, pan, churros">
-    <title>Panaderia</title>
-
+    <meta name="description" content="Panadería Doña Rosa - Tradición y Sabor Artesanal">
+    <title>Panadería Doña Rosa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-    <header class="header">
-
-        <nav class="nav">
-
-            <a> 
-                <img class="logo" src="./asset/logo2-png.png" alt="logo">
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo-link">
+                <img src="./asset/logo.png" alt="Panadería Doña Rosa" class="logo-img">
             </a>
-
-            <ul class="lista">
-                <li class="li-nav"><a class="link-listitems" href="#">Sobre Nosotros</a></li>
-                <li class="li-nav"><a class="link-listitems" href="#">Productos</a></li>
-                <li class="li-nav"><a class="link-listitems" href="#">Contacto</a></li>
-            </ul>
-
-        </nav>
-
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main class="main">
-
-        <section class="container-acercaDeNosotros">
-
-            <article class="article-acercaDeNosotros">
-
-                <h2 class="titulosSeccion"> Panaderia Doña Rosa</h2>
-                
-                <p class="parrafo-acercaDeNosotros">
-                    Doña Rosa es una panaderia artesanal que se enorgullece de ofrecer deliciosos productos horneados frescos todos los dias.Nuestros panaderos expertos utilizan solo los ingredientes más frescos y de alta calidad para crear una variedad de panes, pasteles y otros productos horeados que son perfectos para cualquier ocasión. Ya sea que esté buscando un desayuno rápido en el camino o un pastel especial para la celebración. Doña Rosa tiene algo para todos 
-                </p>
-
-            </article>
-
-            <div class="img-acercaDeNosotros">
-                <img src="./asset/foto1.jpg" alt="foto panaderia doña rosa">
+    <section id="inicio" class="hero-section">
+        <div class="hero-slider">
+            <div class="slides-wrapper">
+                <div class="hero-slide active">
+                    <div class="slide-bg" style="background-image: url('./asset/panes.avif');"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="hero-content">
+                        <h2 class="hero-subtitle">Tradición y frescura</h2>
+                        <h1 class="hero-title">SABORES QUE ENAMORAN</h1>
+                        <p class="hero-description">Productos artesanales horneados día a día con ingredientes frescos seleccionados.</p>
+                        <a href="#productos" class="btn btn-primary">Ver Productos</a>
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <div class="slide-bg" style="background-image: url('./asset/facturas.avif');"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="hero-content">
+                        <h2 class="hero-subtitle">Panadería y Confitería Artesanal</h2>
+                        <h1 class="hero-title">LA MEJOR PASTELERÍA TRADICIONAL</h1>
+                        <p class="hero-description">Tortas, facturas, masitas secas y postres para cada momento.</p>
+                        <a href="#contacto" class="btn btn-primary">Hacer Pedido</a>
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <div class="slide-bg" style="background-image: url('./asset/torta.avif');"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="hero-content">
+                        <h2 class="hero-subtitle">Productos de Calidad</h2>
+                        <h1 class="hero-title">EL AMASAR ES UN ARTE </h1>
+                        <p class="hero-description">Más de 15 años brindando tradición, frescura y sabor en cada receta.</p>
+                        <a href="#nosotros" class="btn btn-outline">Conócenos</a>
+                    </div>
+                </div>
             </div>
 
-        </section>
+            <div class="slider-pagination">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
 
-    </main>
+            <button class="btn-prev" aria-label="Anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="btn-next" aria-label="Siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <section id="nosotros" class="section about-section" data-reveal>
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-tag">NUESTRA HISTORIA</span>
+                    <h2 class="section-title">Panadería Doña Rosa</h2>
+                    <div class="separator-line"></div>
+                    <p>
+                        Doña Rosa es una panadería artesanal que se enorgullece de ofrecer los mejores productos frescos 
+                        horneados todos los días. Nuestros panaderos utilizan solo los ingredientes de la más alta 
+                        calidad y frescura para crear una gran variedad de panes, tortas y otros productos panificados.
+                    </p>
+                    <p>
+                        Ya sea que esté buscando un desayuno rápido o una torta para una celebración,
+                        Doña Rosa tiene algo para vos.
+                    </p>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-check"></i> Productos de la más alta calidad</li>
+                        <li><i class="fa-solid fa-check"></i> Elaboración artesanal</li>
+                        <li><i class="fa-solid fa-check"></i> Atención que se ajusta a tus necesidades</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="./asset/foto1.jpg" alt="Panadería Doña Rosa">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos" class="section products-section bg-warm" data-reveal>
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">VARIEDAD Y SABOR</span>
+                <h2 class="section-title">Nuestras Especialidades</h2>
+                <div class="separator-line center"></div>
+            </div>
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="card-image">
+                        <img src="./asset/panes.avif" alt="Panadería">
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Panadería</h3>
+                        <p class="card-text">Pan de masa madre, facturas, medialunas, pan francés y facturas de hojaldre recién horneadas.</p>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="card-image">
+                        <img src="./asset/torta.avif" alt="Pastelería">
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Pastelería</h3>
+                        <p class="card-text">Tortas, tartas frutales, lemon pie, cheesecake y pastafloras.</p>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="card-image">
+                        <img src="./asset/sandwich.avif" alt="Salados">
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Salados</h3>
+                        <p class="card-text">Empanadas, sándwiches de miga, pebetes, chips rellenos.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner-cta" data-reveal>
+        <div class="container text-center">
+            <h2>¿Tenés un evento especial?</h2>
+            <p>Hacé tu pedido con anticipación y disfrutá de los mejores productos frescos.</p>
+            <a href="#contacto" class="btn btn-primary">Consultar</a>
+        </div>
+    </section>
+
+    <section id="contacto" class="section contact-section" data-reveal>
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">CONTACTO</span>
+                <h2 class="section-title">Envíanos tu Consulta</h2>
+                <div class="separator-line center"></div>
+            </div>
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" placeholder="11 2233 4455">
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Dirección</label>
+                        <input type="text" id="direccion" placeholder="Tu dirección">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Detalles de tu pedido o consulta</label>
+                        <textarea id="mensaje" rows="5" required placeholder="Escribí tu consulta..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
+        <div class="container">
 
-    </footer>    
+            <div class="footer-benefits">
+                <div class="benefit-item">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <h4>Pagá como quieras</h4>
+                    <p>Efectivo, tarjeta ó Mercado Pago.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fa-solid fa-truck"></i>
+                    <h4>Envíos a domicilio</h4>
+                    <p>Hacenos tu pedido y lo enviamos cuando este listo.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fa-solid fa-seedling"></i>
+                    <h4>Frescura diaria</h4>
+                    <p>Más de 15 años avalan nuestra trayectoria</p>
+                </div>
+            </div>
 
+            <hr class="footer-divider">
+
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h5>Productos</h5>
+                    <a href="#productos">Pan artesanal</a>
+                    <a href="#productos">Facturas</a>
+                    <a href="#productos">Pastelería</a>
+                    <a href="#productos">Salados</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Horarios</h5>
+                    <p>Lun a Sáb: 07:00 - 20:00</p>
+                    <p>Domingos: 08:00 - 13:00</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Contacto</h5>
+                    <p><i class="fa-solid fa-location-dot"></i> Av. Magallanes 1234</p>
+                    <p><i class="fa-solid fa-phone"></i> +54 11 4444-5555</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@doñarosa.com</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Seguinos</h5>
+                    <div class="footer-social">
+                        <a aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-copy">
+                <p>&copy; 2026 Panadería Doña Rosa. Todos los derechos reservados.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/main.js"></script>
 </body>
-
 </html>

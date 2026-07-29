@@ -1,0 +1,140 @@
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-image .image-frame img {
+        height: 300px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .footer-benefits {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #FFFFFF;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+    }
+
+    .main-nav.open {
+        max-height: 350px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .main-nav a {
+        display: block;
+        padding: 8px 0;
+    }
+
+    .main-nav a::after {
+        display: none;
+    }
+
+    .hero-section {
+        height: calc(100vh - 70px);
+        min-height: 400px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-wrapper {
+        padding: 25px;
+    }
+
+    .banner-cta h2 {
+        font-size: 1.6rem;
+    }
+
+    .header {
+        padding: 5px 0;
+    }
+
+    .logo-img {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding: 40px 0 20px;
+    }
+
+    .hero-title {
+        font-size: 1.6rem;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .banner-cta {
+        padding: 50px 0;
+        background-attachment: scroll;
+    }
+
+    .whatsapp-float {
+        width: 48px;
+        height: 48px;
+        font-size: 1.3rem;
+        bottom: 20px;
+        right: 20px;
+    }
+}
